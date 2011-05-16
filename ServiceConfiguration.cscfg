@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceConfiguration serviceName="Italia" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="WebRole">
+    <Instances count="1"/>
+    <ConfigurationSettings>
+      <!-- Azure Storage Account for Cloud Environment -->
+      <Setting name="AzureCloudStorageAccountName" value="MyAccountName"/>
+      <Setting name="AzureCloudStorageAccountKey" value="MyAccountKey"/>
+ 
+      <!-- Azure Storage Account for Dev Environment with default account devstoreaccount1 -->
+      <Setting name="AzureDevStorageAccountName" value="devstoreaccount1"/>
+      <Setting name="AzureDevStorageAccountKey" value="Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="/>
+      
+      <Setting name="SqlAzureHost" value=""/>
+      <Setting name="SqlAzureUserName" value=""/>
+      <Setting name="SqlAzurePassword" value=""/>
+      <Setting name="SqlAzureDatabase" value=""/>
+      <Setting name="UseDataStorage" value="true"/>
+      <Setting name="UseDevelopmentStorage" value="true"/>
+      <Setting name="UseCloudStorage" value="false"/>
+      <Setting name="UseSqlAzure" value="false"/>
+      <Setting name="LogLevel" value="Error"/>
+      <Setting name="ScheduledTransferPeriodInSeconds" value=""/>
+      <Setting name="WindowsAzureStorageConnectionString" value="UseDevelopmentStorage=true"/>
+      <Setting name="XDrives" value=""/>
+      <Setting name="XDrivesLocalCache" value=""/>
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

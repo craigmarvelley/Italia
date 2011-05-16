@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceDefinition name="Italia" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole enableNativeCodeExecution="true" name="WebRole">
+    <Imports/>
+    <Endpoints>
+      <InputEndpoint name="HttpIn" port="80" protocol="http" />
+    </Endpoints>
+    <ConfigurationSettings>
+      <!-- Azure Storage Account for Cloud Environment -->
+      <Setting name="AzureCloudStorageAccountName"/>
+      <Setting name="AzureCloudStorageAccountKey"/>
+ 
+      <!-- Azure Storage Account for Dev Environment -->
+      <Setting name="AzureDevStorageAccountName"/>
+      <Setting name="AzureDevStorageAccountKey"/>
+      <Setting name="SqlAzureHost"/>
+      <Setting name="SqlAzureUserName"/>
+      <Setting name="SqlAzurePassword"/>
+      <Setting name="SqlAzureDatabase"/>
+      <Setting name="UseDataStorage"/>
+      <Setting name="UseDevelopmentStorage"/>
+      <Setting name="UseCloudStorage"/>
+      <Setting name="UseSqlAzure"/>
+      <Setting name="LogLevel"/>
+      <Setting name="ScheduledTransferPeriodInSeconds"/>
+      <Setting name="WindowsAzureStorageConnectionString"/>
+      <Setting name="XDrives"/>
+      <Setting name="XDrivesLocalCache"/>
+    </ConfigurationSettings>
+  </WebRole>
+</ServiceDefinition>
